@@ -12,6 +12,12 @@ default:
   private_key_path: '~/.ssh/ninja'  
 ```
 
+Install gems:
+
+```
+bundle install
+```
+
 ## Run
 
 ```
