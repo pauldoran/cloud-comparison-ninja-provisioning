@@ -12,6 +12,7 @@ US_WEST_1_AMI = 'ami-bb373ffe'
 EU_WEST_1_AMI = 'ami-0a3c9a7d'
 
 set :port, 5555
+set :environment, :production
 
 post '/compute' do
   content_type :json
