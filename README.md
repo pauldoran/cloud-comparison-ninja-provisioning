@@ -42,6 +42,7 @@ Content-Type: application/json
     },
     {
       "provider": "google",
+      "google_project": "cloud-comparison-ninja",
       "zone_name": "europe-west1-a",
       "image_name": "debian-7-wheezy-v20140926",
       "machine_type": "n1-standard-1",

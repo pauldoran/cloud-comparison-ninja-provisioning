@@ -60,7 +60,7 @@ def create_compute(options)
   end
   
   puts "Executing script"
-  results = server.ssh "wget -o run.sh https://raw.githubusercontent.com/pauldoran/cloud-comparison-ninja-app/master/docker/run.sh >> sudo bash run.sh #{instance_uuid} 2>&1 | tee init.log"
+  results = server.ssh "wget -o run.sh https://raw.githubusercontent.com/pauldoran/cloud-comparison-ninja-app/master/docker/run.sh && sudo bash run.sh #{instance_uuid} 2>&1"
   results.each do |result|
     puts result.stdout
   end
