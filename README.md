@@ -25,6 +25,32 @@ $ bundle install
 ruby server.rb
 ```
 
+## Creating Instances
+
+POST http://localhost:5555/compute
+Content-Type: application/json
+
+``` json
+{
+  "compute": [
+    {
+      "provider": "aws",
+      "region": "eu-west-1",
+      "image_id": "ami-7aa8080d",
+      "flavor_id": "m3.medium",
+      "username": "ubuntu"
+    },
+    {
+      "provider": "google",
+      "zone_name": "europe-west1-a",
+      "image_name": "debian-7-wheezy-v20140926",
+      "machine_type": "n1-standard-1",
+      "username": "ubuntu"
+    }
+  ]
+}
+```
+
 ## Useful Links
 
 - http://cloud-images.ubuntu.com/locator/ec2/
