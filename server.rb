@@ -11,6 +11,7 @@ require 'securerandom'
 EU_WEST_1_AMI = 'ami-7aa8080d'
 
 set :port, 5555
+set :environment, :production
 
 post '/compute' do
   content_type :json
