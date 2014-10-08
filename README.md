@@ -15,7 +15,8 @@ default:
 Install gems:
 
 ```
-bundle install
+$ gem install bundler
+$ bundle install
 ```
 
 ## Run
